@@ -1,0 +1,42 @@
+{
+  "plugins": [
+    "@babel/plugin-proposal-numeric-separator",
+    "@babel/plugin-syntax-dynamic-import",
+    ["@babel/plugin-transform-runtime", { "corejs": 3 }],
+    "lodash",
+    "date-fns",
+    ["babel-plugin-styled-components", { "ssr": false, "displayName": false }]
+  ],
+  "presets": ["@babel/react"],
+  "env": {
+    "development": {
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "targets": "last 1 Chrome version",
+            "modules": false,
+            "useBuiltIns": "entry",
+            "corejs": 3
+          }
+        ],
+        "@babel/typescript"
+      ]
+    },
+    "production": {
+      "presets": [
+        [
+          "@babel/env",
+          {
+            "targets": "last 1 Chrome version",
+            "modules": false,
+            "useBuiltIns": "entry",
+            "corejs": 3
+          }
+        ],
+        "@babel/typescript"
+      ],
+      "plugins": ["react-local"]
+    }
+  }
+}
