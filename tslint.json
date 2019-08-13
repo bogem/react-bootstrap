@@ -13,7 +13,7 @@
     "early-exit": true,
     "encoding": true,
     "eofline": true,
-    "file-name-casing": [true, "pascal-case"],
+    "file-name-casing": [true, "camel-case"],
     "forin": true,
     "function-constructor": true,
     "import-name": false,
