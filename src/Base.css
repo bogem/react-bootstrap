@@ -392,13 +392,12 @@ table {
 }
 
 html {
-  color: #3f3f3f;
+  color: #000;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
     "Helvetica Neue", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   height: 100%;
   line-height: 1;
-  min-width: 320px;
   width: 100%;
 }
 
